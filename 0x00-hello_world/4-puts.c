@@ -1,7 +1,9 @@
+#!/bin/bash
 #include <stdio.h>
 
 /**
- * printing a text 
+ * main - Prints quote
+ *
  * Return: zero on success
  *
  */
