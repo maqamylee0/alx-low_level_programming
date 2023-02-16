@@ -1,8 +1,6 @@
 #include <stdio.h>
-
 /**
- * main -prints text
- * 
+ * main -prints text 
  * Return: zero on success
  *
  */
