@@ -3,7 +3,6 @@
 
 /**
  * main - Prints quote
- *
  * Return: zero on success
  *
  */
