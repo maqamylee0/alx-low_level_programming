@@ -1,11 +1,12 @@
 #include <stdio.h>
 	
-	/**
-	* main - prints text
-	* 
-	* Return: zero on success
-	*
-	*/
+/**
+ * main - prints text
+ * 
+ * Return: zero on success
+ *
+ */
+
 int main(void)
 {
 	int charSize = sizeof(char);
