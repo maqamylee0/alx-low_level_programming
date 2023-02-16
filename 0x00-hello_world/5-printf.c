@@ -2,7 +2,6 @@
 /**
  * main -prints text 
  * Return: zero on success
- *
  */
 int main(void)
 {
