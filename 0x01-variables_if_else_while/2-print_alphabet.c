@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main = main function
+ * main - main function
  * @void: empty list of params
  * Description: print alphabet
  * Return: zero or success
