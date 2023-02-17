@@ -18,7 +18,6 @@ int main(void)
 		n++;
  	}
 	n = 97;
-	
 	while (n <= 102)
 	{
 		putchar(n);
