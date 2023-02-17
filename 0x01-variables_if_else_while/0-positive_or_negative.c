@@ -4,7 +4,7 @@
 #include <stdio.h>
 /**
  * main - main function
- * Return - zero or success
+ * Return: zero or success
  */
 int main(void)
 {
