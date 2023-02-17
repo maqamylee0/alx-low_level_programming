@@ -4,6 +4,7 @@
 #include <stdio.h>
 /**
  * main - main function
+ * Return - zero or success
  */
 int main(void)
 {
@@ -18,7 +19,7 @@ int main(void)
 	} else if (n == 0)
 	{
 		printf("%d is zero\n", n);
-	} else 
+	} else
 	{
 		printf("%d is negative\n", n);
 	}	
