@@ -3,6 +3,7 @@
 #include <stdlib.h>
 /**
  * main = main function
+ * Description: print alphabet 
  * Return: zero or success
  */
 int main(void)
