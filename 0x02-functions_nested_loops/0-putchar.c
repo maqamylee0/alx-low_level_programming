@@ -1,22 +1,10 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-#include <stdio.h>
+#include <main.h>
 /**
  * main - main function
  * Return: zero or success
  */
 int main(void)
 {
-    putchar('_');
-    putchar('p');
-    putchar('u');
-    putchar('t');
-    putchar('c');
-    putchar('h');
-    putchar('a');
-    putchar('r');
-    putchar('\n');
-	
+    _putchar();	
 	return (0);
 }

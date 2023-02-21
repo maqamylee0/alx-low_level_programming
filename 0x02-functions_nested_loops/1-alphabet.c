@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
-#include <stdio.h>
+#include <main.h>
 /**
  * main - main function
  * print_alphabet(void) - method to print alphabet
