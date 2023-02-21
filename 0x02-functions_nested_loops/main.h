@@ -23,3 +23,17 @@ void print_alphabet(void)
         putchar(i);
     }
 }
+
+void print_alphabet_x10(void)
+{
+    int i, j = 1;
+    while (j <= 10)
+    {
+        for (i = 97; i <= 122; i++)
+        {
+            putchar(i);
+        }
+        putchar('\n');
+        j++;
+    }
+}
