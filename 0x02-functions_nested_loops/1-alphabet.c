@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - main function
  * print_alphabet(void) - method to print alphabet
@@ -10,10 +11,10 @@
 
 void print_alphabet(void)
 {
-    int i;
+int i;
 
-    for (i = 97; i <= 122; i++)
-    {
-        putchar(i);
-    }
+for (i = 97; i <= 122; i++)
+{
+putchar(i);
+}
 }
