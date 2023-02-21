@@ -6,15 +6,7 @@
  * Description: print alphabet
  * Return: zero or success
  */
-void print_alphabet(void)
-{
-int i;
 
-for (i = 97; i <= 122; i++)
-{
-putchar(i);
-}
-}
 int main(void)
 {
 print_alphabet();
