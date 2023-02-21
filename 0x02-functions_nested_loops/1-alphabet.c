@@ -7,9 +7,12 @@
  * Return: zero or success
  */
 
-int main(void)
+void print_alphabet(void)
 {
-print_alphabet();
-putchar('\n');
-return (0);
+    int i;
+
+    for (i = 97; i <= 122; i++)
+    {
+        putchar(i);
+    }
 }
