@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_times_table - prints timetable
+ * print_times_table- prints timetable
  * @n :  input integer
  * Description: check uppr or lower case
  * Return: zero 0r 1
