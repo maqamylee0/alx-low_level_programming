@@ -16,7 +16,7 @@ _putchar((a % 10) + '0');
 }
 else
 {
-_putchar((a % 10));
+_putchar((a % 10) + '0');
 
 }
 return  (a % 10);
