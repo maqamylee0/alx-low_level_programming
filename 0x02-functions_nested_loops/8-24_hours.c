@@ -16,38 +16,13 @@ for (a = 0; a <= 24; a++)
 
 for (b = 0; b <= 60; b++)
 {
-if (a <= 9)
-{
-_putchar('0' + 0);
-_putchar('0' + a);
-
-}
-else
-{
-_putchar('0' + a / 10 );
+_putchar('0' + a / 10);
 _putchar('0' + a % 10);
-
-}
 _putchar(':');
-
-if (b <= 9)
-{
-_putchar('0' + 0);
-_putchar('0' + b);
-
-}
-else
-{
-_putchar('0' + b / 10 );
-
+_putchar('0' + b / 10);
 _putchar('0' + b % 10);
-}
 _putchar('\n');
 
 }
-
-
-
-
 }
 }
