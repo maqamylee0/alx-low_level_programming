@@ -18,7 +18,8 @@ for (b = 0; b <= 60; b++)
 {
 if (a <= 9)
 {
-_putchar('0' + a);
+_putchar('0');
+_putchar(a);
 
 }
 else
@@ -30,7 +31,9 @@ _putchar(':');
 
 if (b <= 9)
 {
-_putchar('0' + b);
+    
+_putchar('0');
+_putchar(b);
 
 }
 else
