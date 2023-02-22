@@ -16,28 +16,35 @@ for (a = 0; a <= 23; a++)
 
 for (b = 0; b <= 60; b++)
 {
-if (b <= 9)
-{
-c = '0' + b;
-}
-else
-{
-c = b;
-}
-
-}
 if (a <= 9)
 {
-d = '0' + a;
+// d = '0' + a;
+_putchar('0' + a);
+
 }
 else
 {
 d = a;
+_putchar(a);
+
 }
-_putchar(d);
 _putchar(':');
-_putchar(c);
+
+if (b <= 9)
+{
+_putchar('0' + b);
+
+}
+else
+{
+_putchar(b);
+}
 _putchar('\n');
+
+}
+
+
+
 
 }
 }
