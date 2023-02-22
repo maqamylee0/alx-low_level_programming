@@ -20,8 +20,9 @@ _putchar('0' + (a * b));
 _putchar(',');
 _putchar(' ');
 _putchar('0' + (b * a));
-_putchar('\n');
 
 }
+_putchar('\n');
+
 }
 }
