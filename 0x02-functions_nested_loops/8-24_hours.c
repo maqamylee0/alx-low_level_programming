@@ -9,7 +9,7 @@
 
 void jack_bauer(void)
 {
-int a = 0, b = 0, c, d;
+int a = 0, b = 0, c = 0, d = 0;
 
 for (a = 0; a <= 23; a++)
 {
@@ -18,7 +18,6 @@ for (b = 0; b <= 60; b++)
 {
 if (a <= 9)
 {
-// d = '0' + a;
 _putchar('0' + a);
 
 }
