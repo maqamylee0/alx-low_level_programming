@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - main function
  * print_alphabet - method to print alphabet
- * @void: empty params
  * Description: print alphabet
  * Return: zero or success
  */
