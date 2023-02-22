@@ -18,25 +18,26 @@ for (b = 0; b <= 60; b++)
 {
 if (a <= 9)
 {
-_putchar('0');
+_putchar('0' + 0);
+_putchar('0' + a);
 
 }
 else
 {
-_putchar(a);
+_putchar('0' + a);
 
 }
 _putchar(':');
 
 if (b <= 9)
 {
-_putchar('0');
-_putchar(b);
+_putchar('0' + 0);
+_putchar('0' + b);
 
 }
 else
 {
-_putchar(b);
+_putchar('0' + b);
 }
 _putchar('\n');
 
