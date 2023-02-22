@@ -10,6 +10,6 @@
 int _abs(int a)
 {
 
-return (a*a)/a;
+return ((a * a) / a);
 
 }
