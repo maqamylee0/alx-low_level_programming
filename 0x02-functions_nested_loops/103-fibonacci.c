@@ -3,7 +3,7 @@
 /**
  * main- main function
  * @void :  empty  string
- * Description: print fibonacci  numbers
+ * Description: print sum of evan valued fibonacci  numbers
  * Return: zero 0r 1
  */
 
