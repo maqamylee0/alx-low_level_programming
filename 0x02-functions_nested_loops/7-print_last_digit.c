@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_last_digit - is upper or lower case
+ * print_last_digit - prints last digit
  * @a : integer input
  * Description: check uppr or lower case
  * Return: zero 0r 1
