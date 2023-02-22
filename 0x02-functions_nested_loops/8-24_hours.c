@@ -24,7 +24,7 @@ _putchar('0' + a);
 }
 else
 {
-_putchar('10' + a);
+_putchar('1' + a);
 
 }
 _putchar(':');
@@ -37,7 +37,7 @@ _putchar('0' + b);
 }
 else
 {
-_putchar('10' + b);
+_putchar('1' + b);
 }
 _putchar('\n');
 
