@@ -19,5 +19,5 @@ else
 _putchar((a % 10) + '0');
 
 }
-return  (a % 10);
+return  ((a % 10) + '0');
 }
