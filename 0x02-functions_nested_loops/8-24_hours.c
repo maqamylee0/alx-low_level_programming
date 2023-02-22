@@ -11,7 +11,7 @@ void jack_bauer(void)
 {
 int a = 0, b = 0;
 
-for (a = 0; a <= 23; a++)
+for (a = 0; a <= 24; a++)
 {
 
 for (b = 0; b <= 60; b++)
@@ -24,7 +24,7 @@ _putchar('0' + a);
 }
 else
 {
-_putchar('0' + a);
+_putchar('10' + a);
 
 }
 _putchar(':');
@@ -37,7 +37,7 @@ _putchar('0' + b);
 }
 else
 {
-_putchar('0' + b);
+_putchar('10' + b);
 }
 _putchar('\n');
 
