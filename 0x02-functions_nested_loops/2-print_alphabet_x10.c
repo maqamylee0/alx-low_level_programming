@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - main function
  * function print_alphabet_x10 - method to print alphabet
