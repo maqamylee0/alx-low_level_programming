@@ -9,7 +9,9 @@
 
 int _abs(int a)
 {
-
-return ((a * a) / a);
+if (a < 0 )
+return (0 - a);
+else
+return a;
 
 }
