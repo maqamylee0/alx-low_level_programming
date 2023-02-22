@@ -1,18 +1,17 @@
 #include "main.h"
 
 /**
- * main - main function
  * _isalpha - is upper or lower case
- * @void: empty params
+ * @c : empty params
  * Description: check uppr or lower case
- * Return: zero or success
+ * Return: zero 0r 1
  */
 
 int _isalpha(int c)
 {
 
 if ((c <= 122 && c >= 97) || (c >= 65 && c <= 121))
-		return (1);
-	else
-		return (0);
+return (1);
+else
+return (0);
 }
