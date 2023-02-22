@@ -5,6 +5,6 @@
  */
 int _putchar(void) 
 {
-    write(1, "_putchar\n", 10);
+    write(1, "_putchar", 8);
     return (0);
 }
