@@ -17,16 +17,16 @@ for (a = 0; a <= 9; a++)
 for (b = 0; b <= 9; b++)
 {
 c = b * a;
-if ( c <= 9)
+if (c <= 9)
 {
-_putchar('0' + ( c % 10));
+_putchar('0' + (c % 10));
 
 _putchar(',');
 _putchar(' ');
 
 
 }
-else 
+else
 {
 _putchar('0' + (c / 10));
 _putchar('0' + (c % 10));
@@ -43,4 +43,7 @@ _putchar(' ');
 _putchar('\n');
 
 }
+_putchar('\n');
+_putchar('\n');
+
 }
