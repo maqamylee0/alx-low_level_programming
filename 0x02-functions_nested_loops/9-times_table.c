@@ -16,10 +16,13 @@ for (a = 0; a <= 9; a++)
 
 for (b = 0; b <= 9; b++)
 {
-_putchar('0' + (a * b));
+_putchar('0' + (a * b) / 10);
+_putchar('0' + ((a * b) % 10));
+
 _putchar(',');
 _putchar(' ');
-_putchar('0' + (b * a));
+
+
 
 }
 _putchar('\n');
