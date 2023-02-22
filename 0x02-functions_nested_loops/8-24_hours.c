@@ -31,7 +31,6 @@ _putchar(':');
 
 if (b <= 9)
 {
-    
 _putchar(0);
 _putchar(b);
 
