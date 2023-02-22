@@ -23,7 +23,6 @@ _putchar('0' + a);
 }
 else
 {
-d = a;
 _putchar(a);
 
 }
