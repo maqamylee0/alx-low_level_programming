@@ -3,8 +3,8 @@
  * main - main function
  * Return: zero or success
  */
-int _putchar(char c) 
+int _putchar(void) 
 {
-    write(1, &c, 1);
+    write(1, '_putchar\n', 10);
     return 0;
 }
