@@ -2,7 +2,7 @@
 
 /**
  * _puts -a string, followed by a new line
- * @s :input pointer to string
+ * @str :input pointer to string
  * Description: a string, followed by a new line
  * Returns:nothing
  */
