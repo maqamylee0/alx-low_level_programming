@@ -9,7 +9,7 @@
 
 char *rot13(char *a)
 {
-	int i = 0;
+	int i;
 
 	for (i = 0; a[i] != '\0'; i++)
 	{
