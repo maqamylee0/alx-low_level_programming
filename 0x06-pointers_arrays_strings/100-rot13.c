@@ -15,9 +15,9 @@ char *rot13(char *a)
 	{
 		if ((a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z'))
 		{       
-			a[i] + 13;
+			a[i] = a[i] + 13;
 		}
-		i++;
+		
 	}
 	return (a);
 }
