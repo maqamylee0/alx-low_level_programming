@@ -19,5 +19,6 @@ char *rot13(char *a)
 		}
 		i++;
 	}
+	return (a);
 }
 
