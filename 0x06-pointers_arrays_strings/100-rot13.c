@@ -13,7 +13,7 @@ char *rot13(char *a)
 
 	while (a[i] != '\0')
 	{
-		if ((a[i] >= 'a' || a[i] >= 'A') && (a[i] <= 'z' || a[i] <= 'Z'))
+		if ((a[i] >= 'a' && a[i] <= 'z') || (a[i] >= 'A' && a[i] <= 'Z'))
 		{
 			a[i] = a[i] - 13;
 		}
