@@ -12,10 +12,12 @@ char *leet(char *a)
 	char *b = "aAeEoOtTlL";
 	char *c = "4433007711";
 	int i = 0;
-	int x = 0;
+	int x;
 
 	while (a[i] != '\0')
 	{
+		x = 0;
+
 		while (b[x] != '\0')
 		{
 			if (b[x] == a[i])
