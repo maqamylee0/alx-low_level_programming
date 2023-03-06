@@ -3,7 +3,7 @@
 
 /**
  * print_diagsums - print sum of diagonal values in a square array
- * @a: array 
+ * @a: array
  * @size: size of array
  * Description: prints sum of both diagonals
  * Return: nothing
