@@ -20,10 +20,11 @@ char *_strchr(char *s, char c)
 		{
 			count++;
 			if (count == 1)
-				return (s[i]);
+				return (&s[i]);
 		}
 		else
 			continue;
+		i++;
 	}
 
 	if (count == 0)
