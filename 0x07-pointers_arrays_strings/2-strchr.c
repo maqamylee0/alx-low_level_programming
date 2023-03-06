@@ -14,6 +14,9 @@ char *_strchr(char *s, char c)
 
 	int count = 0;
 
+	if (src == NULL)
+		return (NULL);
+
 	while (s[i] != '\0')
 	{
 		if (s[i] == c)
