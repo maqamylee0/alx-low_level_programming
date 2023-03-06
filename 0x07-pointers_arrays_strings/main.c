@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include "main.h"
 /**
  * main - check the code
  *
@@ -12,7 +11,7 @@ int main(void)
     char *f = "irv";
     char *t;
 
-    t = strpbrk(s, f);
+    t = _strpbrk(s, f);
     printf("%s\n", t);
     return (0);
 }

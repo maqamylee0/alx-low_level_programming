@@ -28,6 +28,6 @@ char *_strpbrk(char *s, char *accept)
 			j++;
 		}
 	}
-	if (count == 0)
-		return (NULL);
+	return (NULL);
 }
+
