@@ -9,7 +9,7 @@
  * Return: 1 if only numbers, 0 if not
  **/
 
-int numchecker(char *s)
+int checker(char *s)
 {
 	int w;
 
@@ -44,12 +44,12 @@ int main(int argc, char *argv[])
 
 	change = atoi(input);
 
-	if (change >= 0 && numchecker(input) == 0)
+	if (change >= 0 && checker(input) == 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	if (change < 0 && numchecker(&input[1]) == 0)
+	if (change < 0 && checker(&input[1]) == 0)
 	{
 		printf("Error\n");
 		return (1);
