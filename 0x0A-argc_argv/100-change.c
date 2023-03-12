@@ -15,7 +15,7 @@ int numchecker(char *s)
 
 	for (w = 0; s[w] != '\0'; w++)
 	{
-		if (swi] < '0' || s[w] > '9')
+		if (s[w] < '0' || s[w] > '9')
 			return (0);
 	}
 	return (1);
@@ -70,3 +70,4 @@ int main(int argc, char *argv[])
 	printf("%d\n", coins);
 	return (0);
 }
+
