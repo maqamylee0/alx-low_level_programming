@@ -1,29 +1,33 @@
-#include "function_pointers.h"
-
 /**
- * get_op_func - selects and returns correct function
- * @s: string containing operand
- * Return: pointer to function, NULL if fails
+ *
  **/
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	int i;
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL},
-	};
-
-	while (i < 6)
+	return (a + b);
+}
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+int op_div(int a, int b)
+{
+	if (b == 0)
 	{
-		if (s == ops[i].op)
-		{
-			return (*ops[i].f);
-		}
-		i++;
+		printf("Error\n");
+		exit(100);
 	}
-	return (NULL)
+	return (a / b);
+}
+int op_mod(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+	return (a % b);
 }
