@@ -1,5 +1,7 @@
 #include "variadic_functions.h"
-
+#include <stdarg.h>
+#include <stdlib.h>
+#include <stdio.h>
 /**
  * print_all - prints anything
  * @format: format of data type to be printed
