@@ -9,10 +9,10 @@
 
 size_t print_list(const list_t *h)
 {
-	unsigned int nodes = 0;
+	size_t nodes = 0;
 
 	if (h == NULL)
-		return;
+		return (nodes);
 	while (h != NULL){
 		printf("[%d] %s", h->len, h->str == NULL ? "(nil)" : h->str);
 		h = h->next;
