@@ -40,7 +40,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (node);
 	}
 
-	while (*nextNode->next != NULL)
+	while (nextNode->next != NULL)
 		nextNode = nextNode.next;
 	nextNode->next = node;
 	return (node);
