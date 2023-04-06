@@ -22,10 +22,11 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (count == index)
 		{
 			prev->next = next;
+			free(mover);
 			return (1);
 		}
 		count++;
-		mover = movie->next;
+		mover = mover->next;
 	}
 	return (-1);
 }
