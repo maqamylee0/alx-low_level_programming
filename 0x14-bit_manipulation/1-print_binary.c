@@ -8,15 +8,15 @@
 
 void print_binary(unsigned long int n)
 {
-	unsigned int i = 1, l;
-
-	if (n <= 1)
-		_putchar(n - '0');
-	while (n > 1)
+	unsigned int i = n;
+	
+	while (n > 2)
 	{
-		l = n & i;
-		_putchar(l - '0');
-		n >> 1;
-		i << 1;
+		i = n & 1;
+		_putchar(i + '0');
+		n = n >> 1;
 	}
+	if (n <= 1)
+		_putchar(n + '0');
+
 }
