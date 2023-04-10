@@ -21,10 +21,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (d >= 0)
 	{
-		if (b[d] == '1')
-			c = 1;
-		else
-			c = 0;
+		c = b[d] - '0';
 		number += c * power(count - 1);
 		count++;
 		d--;
