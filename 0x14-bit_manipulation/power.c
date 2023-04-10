@@ -8,14 +8,11 @@
 
 unsigned int power(int n)
 {
-	int i = 0;
 	unsigned int result = 1;
 
 	if (n == 0)
 		return (1);
-
-	for (; i < n; i++)
-		result *= 2;
+	result = 1 << n;
 
 	return (result);
 }
