@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
+
 /**
  * reverse- reverses a string
  * @p: ponter to start of string
