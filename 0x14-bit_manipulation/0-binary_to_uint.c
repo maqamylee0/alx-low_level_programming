@@ -10,8 +10,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	int count = 0, d = 0;
 	unsigned int number = 0, c;
-	char *y, *copy;
-
+	
 	if (b == NULL)
 		return (0);
 	while (b[d] != '\0')
@@ -20,20 +19,16 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		d++;
 	}
-	copy = cpy_str(b, d);
-
-	y = reverse_string(copy, d);
-	while ((*y) != '\0')
+	while (d >= 0)
 	{
-		if ((*y) == '1')
+		if (b[d] == '1')
 			c = 1;
 		else
 			c = 0;
-		number += c * power(count);
-		y = y + 1;
+		number += c * power(count - 1);
 		count++;
+		d--;
 	}
-	free(copy);
 	return (number);
 }
 
