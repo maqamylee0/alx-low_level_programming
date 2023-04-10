@@ -3,20 +3,15 @@
 /**
  * reverse- reverses a string
  * @p: ponter to start of string
+ * @len: length of string
  * Return: pointer to reversed string
  */
 
-char* reverse_string(char *ptr)
+char* reverse_string(char *ptr, int len)
 {
 	int i = 0;
-	int len = 0;
 	char hold;
 
-	while (ptr[i] != '\0')
-	{
-		len++;
-		i++;
-	}
 	for (i = 0; i < (len / 2); i++)
 	{
 		hold = ptr[i];

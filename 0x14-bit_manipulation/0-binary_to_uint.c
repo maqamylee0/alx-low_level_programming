@@ -21,12 +21,12 @@ unsigned int binary_to_uint(const char *b)
 			return (0);
 		d++;
 	}
-	copy = strdup(b);
+	copy = cpy_str(b, d);
 
 	if (copy != NULL)
 	{
 
-		y = reverse_string(copy);
+		y = reverse_string(copy, d);
 		while ((*y) != '\0')
 		{
 			if ((*y) == '1')

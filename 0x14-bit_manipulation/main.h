@@ -4,7 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-char* reverse_string(char *ptr);
+char* cpy_str(const char *ptr, int len);
+char* reverse_string(char *ptr, int len);
 unsigned int power(int n);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
