@@ -10,21 +10,31 @@ unsigned int binary_to_uint(const char *b)
 {
 	int count = 0;
 	unsigned int number = 0, c;
+	char *y, *copy;
 
 	if (b == NULL)
 		return (0);
 	if (*b !=  '0' && *b != '1')
 		return (0);
+	copy = strdup(b);
 
-	while ((*b) != '\0')
+	if (copy != NULL)
 	{
-		if ((*b) == '1')
-			c = 1;
-		else
-			c = 0;
-		number += c * power(count);
-		b = b + 1;
-		count++;
+		y = reverse_string(copy);
+		while ((*y) != '\0')
+		{
+			if ((*y) == '1')
+				c = 1;
+			else
+				c = 0;
+			number += c * power(count);
+			y = y + 1;
+			count++;
+		}
+		free(copy);
+		return (number);
+
 	}
-	return (number);
+	else
+		return (0);
 }
