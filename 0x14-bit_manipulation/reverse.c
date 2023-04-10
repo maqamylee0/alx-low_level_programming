@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * reverse- reverses a string
@@ -6,22 +7,23 @@
  * Return: pointer to reversed string
  */
 
-char *reverse_string(char *ptr)
+char* reverse_string(char *ptr)
 {
 	int i = 0;
 	int len = 0;
 	char hold;
 
-	while (*ptr != '\0')
-		len++;
-	for (; i < (len / 2); i++)
+	while (ptr[i] != '\0')
 	{
-		hold = *ptr;
+		len++;
+		i++;
+	}
+	for (i = 0; i < (len / 2); i++)
+	{
+		hold = ptr[i];
 		ptr[i] = ptr[len - i - 1];
 		ptr[len - i - 1] = hold;
 	}
-	ptr = &ptr[0];
-	return (ptr);
+ 	return ptr;
 }
-
 

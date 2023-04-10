@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * binary_to_uint- converts binary to integer
@@ -8,18 +9,23 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int count = 0;
+	int count = 0, d = 0;
 	unsigned int number = 0, c;
 	char *y, *copy;
 
 	if (b == NULL)
 		return (0);
-	if (*b !=  '0' && *b != '1')
-		return (0);
+	while (b[d] != '\0')
+	{
+		if (b[d] !=  '0' && b[d] != '1')
+			return (0);
+		d++;
+	}
 	copy = strdup(b);
 
 	if (copy != NULL)
 	{
+
 		y = reverse_string(copy);
 		while ((*y) != '\0')
 		{
