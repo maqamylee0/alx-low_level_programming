@@ -22,25 +22,18 @@ unsigned int binary_to_uint(const char *b)
 	}
 	copy = cpy_str(b, d);
 
-	if (copy != NULL)
+	y = reverse_string(copy, d);
+	while ((*y) != '\0')
 	{
-
-		y = reverse_string(copy, d);
-		while ((*y) != '\0')
-		{
-			if ((*y) == '1')
-				c = 1;
-			else
-				c = 0;
-			number += c * power(count);
-			y = y + 1;
-			count++;
-		}
-		free(copy);
-		return (number);
-
+		if ((*y) == '1')
+			c = 1;
+		else
+			c = 0;
+		number += c * power(count);
+		y = y + 1;
+		count++;
 	}
-	else
-		return (0);
+	free(copy);
+	return (number);
 }
 
