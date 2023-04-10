@@ -1,6 +1,42 @@
 #include "main.h"
 
 /**
+ * cpy_str- copy string to new space
+ * @ptr: pointer to string
+ * @len: lenght of string
+ * Return: pointer to new string
+ */
+
+char* cpy_str(const char *ptr, int len)
+{
+        int i = 0;
+        char *c = malloc(len + 1);
+
+        for (; i <= len; i++)
+        {
+                c[i] = ptr[i];
+        }
+        return (c);
+}
+
+/**
+ * power- calculates power of 2
+ * @n: power of 2
+ * Return: result of powering 2
+ */
+
+unsigned int power(int n)
+{
+        unsigned int result = 1;
+
+        if (n == 0)
+                return (1);
+        result = 1 << n;
+
+        return (result);
+}
+
+/**
  * binary_to_uint- converts binary to integer
  * @b: character pointer to string of binary
  * Return: unsigned int decimal
