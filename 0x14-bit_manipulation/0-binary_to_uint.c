@@ -1,6 +1,5 @@
 #include "main.h"
 
-
 /**
  * binary_to_uint- converts binary to integer
  * @b: character pointer to string of binary
@@ -44,3 +43,4 @@ unsigned int binary_to_uint(const char *b)
 	else
 		return (0);
 }
+
