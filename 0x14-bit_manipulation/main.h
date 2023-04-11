@@ -2,6 +2,7 @@
 #define __BIT_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 unsigned int power(int n);
 unsigned int binary_to_uint(const char *b);
