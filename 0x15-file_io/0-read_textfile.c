@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * read_textfile- read file contents
  * @filename: pointer to file
@@ -18,7 +17,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 
-	fd = open(filename, 0_RDONLY);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 	{
 		free(buffer);
