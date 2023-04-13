@@ -10,7 +10,8 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	int len;
+	int len = 0;
+	ssize_t w;
 
 	if (filename == NULL)
 		return (-1);
@@ -23,9 +24,22 @@ int create_file(const char *filename, char *text_content)
 		text_content++;
 	}
 	if (text_content != NULL)
-		write(STDOUT_FILENO, text_content, len);
+	{
+		w = write(STDOUT_FILENO, text_content, len);
+		if (w == -1)
+		{
+			close(fd);
+			return (-1);
+		}
 	else
-		write(STDOUT_FILENO, "", 0);
+	{
+		w = write(STDOUT_FILENO, "", 0);
+		if (w == -1)
+		{
+			close(fd);
+			return (-1);
+		}
+	}
 	close(fd);
 	return (1);
 }
