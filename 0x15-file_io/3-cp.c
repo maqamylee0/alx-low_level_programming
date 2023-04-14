@@ -27,6 +27,7 @@ int main(int argc, char *argv[])
 {
 	int file_to, file_from;
 	char *buffer = malloc(sizeof(char) * 1024);
+	ssize_t i, w;
 
 	if (argc != 3)
 	{
