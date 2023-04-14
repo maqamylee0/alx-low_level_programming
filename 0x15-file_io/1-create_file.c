@@ -26,7 +26,7 @@ int create_file(const char *filename, char *text_content)
 			len++;
 			text_content++;
 		}
-		w = write(STDOUT_FILENO, text_content, len);
+		w = write(fd, text_content, len);
 		if (w == -1 || w != len)
 		{
 			close(fd);
@@ -35,7 +35,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	else
 	{
-		w = write(STDOUT_FILENO, "", 0);
+		w = write(fd, "", 0);
 		if (w == -1)
 		{
 			close(fd);
