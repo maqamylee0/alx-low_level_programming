@@ -24,22 +24,19 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-	while ((i = read(fd, buffer, letters)) > 0)
-	{
-		w = write(STDOUT_FILENO, buffer, i);
-		if (w == -1 || w != i)
-		{
-			free(buffer);
-			return (0);
-		}
-		r += i;
-	}
+	i = read(fd, buffer, letters);
 	if (i == -1)
+	{
+		free(buffer);
+		return (0);
+	}
+	w = write(STDOUT_FILENO, buffer, i);
+	if (w == -1 || w != i)
 	{
 		free(buffer);
 		return (0);
 	}
 	free(buffer);
 	close(fd);
-	return (r);
+	return (w);
 }
