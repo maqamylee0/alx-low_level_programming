@@ -42,7 +42,7 @@ int main(int argc, char *argv[])
 
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	file_from = open(argv[1], O_RDONLY);
-	while ((i = read(file_from, buffer, 1024)) != -1)
+	while ((i = read(file_from, buffer, 1024)) > 0)
 	{
 		w = write(file_to, buffer, i);
 		if (w == -1 || file_to == -1)
