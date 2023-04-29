@@ -133,6 +133,7 @@ int main(int argc, const char *argv[])
 	big_endian = data(buffer);
 	version(buffer);
 	abivers(buffer);
+	os_abi(buffer);
 	type(buffer, big_endian);
 	lseek(fd, 24, SEEK_SET);
 	_read(fd, (char *) buffer, bit_mode / 8);
