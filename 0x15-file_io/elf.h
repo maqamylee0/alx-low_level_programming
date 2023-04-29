@@ -75,4 +75,12 @@ void magic(const unsigned char *buffer)
 	for (i = 0; i < 16; ++i)
 		printf("%02x%c", buffer[i], i < 15 ? ' ' : '\n');
 }
+/**
+ * abivers - print ELF ABI version
+ * @buffer: the ELF header
+ */
+void abivers(const unsigned char *buffer)
+{
+	printf("  %-34s %u\n", "ABI Version:", buffer[EI_ABIVERSION]);
+}
 #endif
