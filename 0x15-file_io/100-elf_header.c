@@ -112,7 +112,7 @@ int main(int argc, const char *argv[])
 	unsigned int bit_mode;
 	int big_endian;
 	int fd;
-
+	
 	if (argc != 2)
 	{
 		write(STDERR_FILENO, "Usage: elf_header elf_filename\n", 31);
@@ -135,6 +135,7 @@ int main(int argc, const char *argv[])
 
 	lseek(fd, 24, SEEK_SET);
 	_read(fd, (char *) buffer, bit_mode / 8);
+	entry(buffer, bit_mode, big_endian);
 
 	_close(fd);
 

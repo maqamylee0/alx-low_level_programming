@@ -57,10 +57,10 @@ void _read(int fd, char *buf, size_t count)
 	exit(98);
 }
 /**
- * elf_magic - print ELF magic
+ * magic - print ELF magic
  * @buffer: the ELF header
  */
-void elf_magic(const unsigned char *buffer)
+void magic(const unsigned char *buffer)
 {
 	unsigned int i;
 
