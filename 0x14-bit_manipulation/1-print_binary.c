@@ -8,9 +8,20 @@
 
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
+	unsigned long int holder;
+	int i, times = 0;
+
+	for (i = 63; i >= 0; i--)
 	{
-		print_binary(n / 2);
+		holder = n >> i;
+		if (holder & 1)
+		{
+			times++;
+			_putchar('1');
+		}
+		if (times)
+			_putchar('0');
 	}
-	_putchar((n % 2) + '0');
+	if (!times)
+		_putchar('0');
 }
