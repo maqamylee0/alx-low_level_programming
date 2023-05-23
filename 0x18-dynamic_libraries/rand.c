@@ -8,23 +8,17 @@ int rand()
 	switch (c)
 	{
 		case 1:
-			return 9;
-			break;
+			return 0;
 		case 2:
-			return 8;
-			break;
+			return 0;
 		case 3:
-			return 10;
-			break;
+			return 0;
 		case 4:
-			return 24;
-			break;
-		case 5:
-			return 75;
-			break;
-		case 6:
 			return 9;
-			break;
+		case 5:
+			return 23;
+		case 6:
+			return (9 - 1);
 		default:
 			return 1;
 	}
