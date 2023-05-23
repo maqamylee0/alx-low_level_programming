@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int rand()
+int rand(void)
 {
 	static int c = 0;
-
+	
 	c++;
 	switch (c)
 	{
