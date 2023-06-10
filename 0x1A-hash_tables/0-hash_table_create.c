@@ -21,6 +21,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	}
 	for (i = 0; i < size; i++)
 		hashtab->array[i] = NULL;
-	hashtable->size = size;
+	hashtab->size = size;
 	return (hashtab);
 }
