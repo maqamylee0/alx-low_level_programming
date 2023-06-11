@@ -21,7 +21,6 @@ void hash_table_delete(hash_table_t *ht)
 			hashnode_pointer = hashnode_pointer->next;
 			free(holder->key);
 			free(holder->value);
-			holder->next == NULL;
 			free(holder);
 		}
 		ht->array[i] = NULL;
