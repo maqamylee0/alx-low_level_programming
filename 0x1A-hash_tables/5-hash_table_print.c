@@ -18,11 +18,11 @@ void hash_table_print(const hash_table_t *ht)
 		while (hashnode_pointer != NULL)
 		{
 			if (j == 0)
-				printf("'%s' : '%s'", hashnode_pointer->key, hashnode_pointer->value);
+				printf("'%s': '%s'", hashnode_pointer->key, hashnode_pointer->value);
 			else
 			{
 				printf(", ");
-				printf("'%s' : '%s'", hashnode_pointer->key, hashnode_pointer->value);
+				printf("'%s': '%s'", hashnode_pointer->key, hashnode_pointer->value);
 			}
 			j++;
 			hashnode_pointer = hashnode_pointer->next;
