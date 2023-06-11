@@ -35,7 +35,6 @@ const char *key, const char *value)
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	unsigned long int hash;
 	unsigned long int index;
 	hash_node_t *hashnode, *hashnode2;
 	int result;
@@ -45,8 +44,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hashnode = malloc(sizeof(hash_node_t));
 	if (hashnode == NULL)
 		return (0);
-	hash = hash_djb2((unsigned char *)key);
-	index = hash % ht->size;
+	index = key_index((const unsigned char *)key, ht->size);
 	hashnode->key = strdup(key);
 	if (hashnode->key == NULL)
 	{
