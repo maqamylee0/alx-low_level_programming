@@ -65,11 +65,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		ht->array[index] = hashnode;
 	}
-	hashnode2 = ht->array[index];
-	result = checkifexists(hashnode, hashnode2, key, value);
-	if (result == 0)
-		return (0);	
-	hashnode->next = ht->array[index];
-	ht->array[index] = hashnode;
+	else
+	{
+		hashnode2 = ht->array[index];
+		result = checkifexists(hashnode, hashnode2, key, value);
+		if (result == 0)
+			return (0);
+		else
+			return (1);
+		hashnode->next = ht->array[index];
+		ht->array[index] = hashnode;
+	}
 	return (1);
 }
