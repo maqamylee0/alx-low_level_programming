@@ -56,6 +56,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hashnode->value = strdup(value);
 	if (hashnode->value == NULL)
 	{
+		free(hashnode->key);
 		free(hashnode);
 		return (0);
 	}
@@ -66,8 +67,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	hashnode2 = ht->array[index];
 	result = checkifexists(hashnode, hashnode2, key, value);
-	if (result != 1)
-		return (0);
+	if (result == 0)
+		return (0);	
 	hashnode->next = ht->array[index];
 	ht->array[index] = hashnode;
 	return (1);
