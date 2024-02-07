@@ -1,4 +1,5 @@
 #include "search_algos.h"
+void print_array(int *array, size_t l, size_t r);
 
 /**
  * binary_search - look for a value in an array of integers using binary search
@@ -19,6 +20,7 @@ int binary_search(int *array, size_t size, int value)
 	}
 	while (low <= high)
 	{
+		mid = low + (high - low) / 2;
 		print_array(array, low, high);
 		if (array[mid] == value)
 			return (mid);
